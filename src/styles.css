@@ -13,10 +13,16 @@ mat-toolbar a {
   margin-right: 2em;
   font-size: .9em;
   text-decoration: none;
+  opacity: .5;
+}
+
+mat-toolbar a.disabled {
+  cursor: not-allowed;
+  opacity: .2;
 }
 
 mat-toolbar a.active {
-  opacity: .5;
+  opacity: 1;
 }
 
 .content {
