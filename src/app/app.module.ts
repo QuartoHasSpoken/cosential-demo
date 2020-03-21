@@ -12,6 +12,12 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProjectComponent } from './project/project.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatSelectModule} from '@angular/material/select';
+import { ProductFullComponent } from './product-full/product-full.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -19,7 +25,10 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     HomeComponent,
     OngoingProjectsComponent,
     OurClientsComponent,
-    FirmFinancesComponent
+    FirmFinancesComponent,
+    DashboardComponent,
+    ProjectComponent,
+    ProductFullComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +38,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatMenuModule,
     MatToolbarModule,
     MatSidenavModule,
+    MatCardModule,
+    MatSelectModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

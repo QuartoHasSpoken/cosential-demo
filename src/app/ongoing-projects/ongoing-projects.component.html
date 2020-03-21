@@ -1,1 +1,13 @@
-<p>ongoing-projects works!</p>
+<div>
+  <mat-form-field>
+    <mat-select [(value)]="selected">
+      <mat-option value="clientCompany">Client Company</mat-option>
+      <mat-option value="completionDate">Completion Date</mat-option>
+      <mat-option value="height">Height</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div *ngFor="let project of projects">
+  <app-project [project]="project" [selectedProperty]="selected" (onSelectedProject)="selectProject($event)"></app-project>
+</div>

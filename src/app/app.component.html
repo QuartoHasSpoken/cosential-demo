@@ -2,9 +2,13 @@
   <h1>Sky High Design</h1>
 </mat-drawer-container>
 <mat-toolbar layout="row" color="primary">
+  <mat-toolbar-row color="secondary">
+    <a routerLink="Dashboard" routerLinkActive="active">Dashboard</a>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-toolbar layout="row">
   <mat-toolbar-row>
-    <a routerLink="Home" routerLinkActive="active">Home</a>
-    <a routerLink="OngoingProjects" routerLinkActive="active">Ongoing Projects</a>
+    <a routerLink="Dashboard/OngoingProjects" routerLinkActive="active">Ongoing Projects</a>
     <a routerLink="/" class="disabled">Our Clients</a>
     <a routerLink="/" class="disabled">Firm Finances</a>
   </mat-toolbar-row>
