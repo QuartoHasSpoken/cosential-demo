@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-typography .mat-drawer-content h1 {
+  padding: 0;
+  margin: .5em;
+}
+
+mat-toolbar a {
+  color: white;
+  margin-right: 2em;
+  font-size: .9em;
+  text-decoration: none;
+}
+
+mat-toolbar a.active {
+  opacity: .5;
+}
+
+.content {
+  margin: 1em;
+}
