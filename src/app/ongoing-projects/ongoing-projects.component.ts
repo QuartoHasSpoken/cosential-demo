@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ApiService} from '../api-service.service';
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {MatDialog} from '@angular/material/dialog';
 import {ProductFullComponent} from '../product-full/product-full.component';
 
 @Component({
@@ -22,7 +22,7 @@ export class OngoingProjectsComponent implements OnInit {
   }
 
   openDialog(project): void {
-    const dialogRef = this.dialog.open(ProductFullComponent, {
+    this.dialog.open(ProductFullComponent, {
       width: '250px',
       data: project
     });
@@ -30,7 +30,6 @@ export class OngoingProjectsComponent implements OnInit {
 
   selectProject(project) {
     this.openDialog(project);
-    console.log(project);
   }
 
 }
